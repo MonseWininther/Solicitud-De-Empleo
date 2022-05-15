@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estyle.css">
+    <title>Solicitud de empleo</title>
+    <script src="cv.js"></script>
+</head>
+
+<body>
+    <form id="cvForm" name="cvForm" method="post">
+        <div class="firstContiner">
+            <div id="frameOne">
+                <div class="titleContiner">
+                    <h2>Solicitud de Empleo</h2>
+                </div>
+                <p>
+                    <label>Que puesto solicita:</label>
+                    <input name="puesto" id="puesto" value="" class="fullwitdh" type="text">
+                </p>
+
+                <p>Sea tan amable de llenar esta solicitud en forma manuscrita NOTA: Toda información aquí proporcionada será tratada confidencialmente
+                </p>
+            </div>
+            <div style="width: 30%;">
+                <p>Fecha</p>
+                <input name="fechaActual" id="fechaActual" type="date">
+
+                <p>Sueldo Mensual deseado</p>
+                <input name="sueldoDeseado" id="sueldoDeseado" type="number">
+            </div>
+            <div style="width: 15%;">
+                <p>Foto</p>
+                <input name="foto" id="foto" type="file">
+            </div>
+        </div>
+
+        <div class="secondContiners">
+            <div>
+                <h3>Datos Personales</h3>
+            </div>
+
+            <div class="frametwo">
+                <div style="width: 25%;"> Apellido Paterno <input id="apellidoPaterno" class="fullwitdh" type="text"> </div>
+                <div style="width: 25%;"> Apellido Materno <input name="apellidoMaterno" id="apellidoMaterno" class="fullwitdh" type="text"> </div>
+                <div style="width: 25%;"> Nombre(s)<input name="nombres" id="nombres" class="fullwitdh" type="text">
+                </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 20%;"> Domicilio <input name="domicilio" id="domicilio" class="fullwitdh" type="text"> </div>
+                <div style="width: 20%;"> Colonia <input name="colonia" id="colonia" class="fullwitdh" type="text">
+                </div>
+                <div style="width: 20%;"> Código Postal <input name="codigoPostal" id="codigoPostal" type="number">
+                </div>
+                <div style="width: 20%;"> Teléfono
+                    <input name="telefono" id="telefono" type="tel"> </div>
+                <div style="width: 20%;"> Sexo:
+                    <input type="radio" name="sexoMasculino" id="sexoMasculino"> Masculino
+                    <input type="radio" name="sexoFemenino" id="sexoFemenino"> Femenino
+                </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 25%;"> Ciudad, Estado <input name="ciudadEstado" id="ciudadEstado" class="fullwitdh" type="text"> </div>
+                <div style="width: 25%;"> Lugar de Nacimiento <input name="lugarNacimiento" id="lugarNacimiento" class="fullwitdh" type="text"> </div>
+                <div style="width: 25%;"> Fecha de Nacimiento <input name="fechaNacimiento" id="fechaNacimiento" type="date"> </div>
+                <div style="width: 25%;"> Nacionalidad <input name="nacionalidad" id="nacionalidad" type="text"> </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 50%;"> Vive con: <input name="vivePadres" id="vivePadres" type="checkbox"> Sus padres
+                    <input name="viveFamilia" id="viveFamilia" type="checkbox"> Su familia
+                    <input name="viveParientes" id="viveParientes" type="checkbox"> Su Parientes <input name="viveSolo" id="viveSolo" type="checkbox"> Solo
+                </div>
+                <div style="width: 25%;"> Estatura <input name="estatura" id="estatura" type="number"> </div>
+                <div style="width: 25%;"> Peso <input name="peso" id="peso" type="number"> </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 50%;"> Personas que dependen de usted:<input name="dependeHijos" id="dependeHijos" type="checkbox"> Hijos <input name="dependeConyuge" id="dependeConyuge" type="checkbox"> Cónyuge
+                    <input name="dependePadres" id="dependePadres" type="checkbox"> Padres <input name="dependeOtros" id="dependeOtros" type="checkbox"> Otros
+                </div>
+                <div style="width: 50%;"> Estado Civil: <input name="estadoCivilSoltero" id="estadoCivilSoltero" type="radio"> Soltero <input name="estadoCivilCasado" id="estadoCivilCasado" type="radio"> Casado
+                    <input name="estadoCivilOtro" id="estadoCivilOtro" type="radio"> Otro
+                </div>
+            </div>
+        </div>
+
+        <div class="secondContiners">
+            <div>
+                <h3>Documentación</h3>
+            </div>
+            <div class="frametwo">
+                <div style="width: 60%;"> Clave Única de Registro de Población <input name="curp" id="curp" class="fullwitdh" type="text">
+                </div>
+                <div style="width: 40%;"> AFORE <input name="afore" id="afore" class="fullwitdh" type="text"> </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 30%;"> Reg. Fed. De Contribuyentes <input name="rfc" id="rfc" class="fullwitdh" type="text"> </div>
+                <div style="width: 30%;"> Numero de Seguridad Social <input name="numeroSeguridadSocial" id="numeroSeguridadSocial" class="fullwitdh" type="text"> </div>
+                <div style="width: 20%;"> Cartilla de Servicio Militar No. <input name="cartillaMilitar" id="cartillaMilitar" class="fullwitdh" type="text"> </div>
+                <div style="width: 20%;"> Pasaporte No <input name="pasaporte" id="pasaporte" class="fullwitdh" type="text"> </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 20%;"> Tiene licencia de manejo: <input name="licenciaManejoNo" id="licenciaManejoNo" type="radio"> No <input name="licenciaManejoSi" id="licenciaManejoSi" type="radio"> Si
+                </div>
+                <div style="width: 20%;"> Clase y Número de Licencia <input name="claseNumeroLicencia" id="claseNumeroLicencia" class="fullwitdh" type="text"> </div>
+                <div style="width: 40%;"> Siendo extranjero que documentos le permiten trabajar en el país <input name="extranjero" id="extranjero" class="mediumWitdh" type="text"> </div>
+            </div>
+        </div>
+
+        <div class="secondContiners">
+            <div>
+                <h3>Estado de Salud y Hábitos Personales</h3>
+            </div>
+            <div class="frametwo">
+                <div style="width: 30%;"> ¿Como considera su estado de salud actual?:
+                    <input name="saludBueno" id="saludBueno" type="radio"> Bueno <input name="saludRegular" id="saludRegular" type="radio"> Regular <input name="saludMalo" id="saludMalo" type="radio"> Malo
+                </div>
+                <br>
+                <!---Error--->
+                <div style="width: 70%;">¿Padece alguna enfermedad crónica?:
+                    <input name="enfermedadCronicaNo" id="enfermedadCronicaNo" type="radio"> No
+                    <input name="enfermedadCronicaSi" id="enfermedadCronicaSi" type="radio"> Si (Explique)
+                    <input name="enfermedadCronicaExplicacion" id="enfermedadCronicaExplicacion" type="text" class="mediumWitdh">
+                </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 33%;"> ¿Práctica Ud. Algún Deporte? <input name="deporte" id="deporte" class="fullwitdh" type="text"> </div>
+                <div style="width: 33%;"> ¿Permanece a algún Club Social o Deportivo? <input name="clubSocialDeporte" id="clubSocialDeporte" class="fullwitdh" type="text"> </div>
+                <div style="width: 33%;"> ¿Cuál es su pasatiempo favorito? <input name="pasatiempo" id="pasatiempo" class="fullwitdh" type="text"> </div>
+            </div>
+            <div class="frametwo">
+                <div style="width: 100%;"> ¿Cuál es su meta en la vida? <input name="metaVida" id="metaVida" class="fullwitdh" type="text"> </div>
+
+            </div>
+        </div>
+        <div class="secondContiners">
+
+            <div>
+                <h3>Datos Familiares</h3>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 25%;">
+                    <div text="center">
+                        Nombre
+                    </div>
+                    <div>
+                        Padre
+                        <input name="nombrePadre" id="nombrePadre" class="fullwitdh" type="text">
+                    </div>
+                    <div>
+                        Madre <input name="nombreMadre" id="nombreMadre" class="fullwitdh" type="text">
+                    </div>
+                    <div>
+                        Esposa (o) <input name="nombreEsposao" id="nombreEsposao" class="fullwitdh" type="text">
+                    </div>
+                </div>
+                <div style="width: 10%;">
+                    Vive
+                    <br> <br>
+                    <div>
+                        <input name="vivePadre" id="vivePadre" type="radio">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="viveMadre" id="viveMadre" type="radio">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="viveEsposao" id="viveEsposao" type="radio">
+                    </div>
+                </div>
+                <div style="width: 10%;">
+                    Fin
+                    <br> <br>
+                    <div>
+                        <input name="finPadre" id="finPadre" type="radio">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="finMadre" id="finMadre" type="radio">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="finEsposao" id="finEsposao" type="radio">
+                    </div>
+                </div>
+                <div style="width: 25%;">
+                    Domicilio
+                    <br> <br>
+                    <div>
+                        <input name="domicilioPadre" id="domicilioPadre" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="domicilioMadre" id="domicilioMadre" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="domicilioEsposao" id="domicilioEsposao" class="fullwitdh" type="text">
+                    </div>
+
+                </div>
+                <div style="width: 25%;">
+                    Ocupación
+                    <br> <br>
+                    <div>
+                        <input name="ocupacionPadre" id="ocupacionPadre" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="ocupacionMadre" id="ocupacionMadre" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="ocupacionEsposao" id="ocupacionEsposao" class="fullwitdh" type="text">
+                    </div>
+                </div>
+
+            </div>
+            <div class="frametwo">
+                <div style="width: 100%;"> Nombre y edades de los hijos <input name="nombreEdadHijos" id="nombreEdadHijos" class="fullwitdh" type="text"></div>
+            </div>
+        </div>
+        <div class="secondContiners">
+            <div>
+                <h3>Escolaridad</h3>
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 25%;">
+                    <div text="center">
+                        Nombre:
+                    </div>
+                    <div>
+                        Primaria <input name="nombrePrimaria" id="nombrePrimaria" class="fullwitdh" type="text">
+                    </div>
+                    <div>
+                        Secundaria o Prevocacional <input name="nombreSecundaria" id="nombreSecundaria" class="fullwitdh" type="text">
+                    </div>
+                    <div>
+                        Preparatoria o Vocacional <input name="nombrePreparatoria" id="nombrePreparatoria" class="fullwitdh" type="text">
+                    </div>
+                    <div>
+                        Profesional
+                        <input name="nombreProfesional" id="nombreProfesional" class="fullwitdh" type="text">
+                    </div>
+                    <div>
+                        Comercial u Otras <input name="nombreComercialOtra" id="nombreComercialOtra" class="fullwitdh" type="text">
+                    </div>
+
+                </div>
+                <div style="width: 25%;">
+                    <div text="center">
+                        Dirección:
+                    </div>
+                    <br>
+                    <div>
+                        <input name="direccionPrimaria" id="direccionPrimaria" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="direccionSecundaria" id="direccionSecundaria" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="direccionPreparatoria" id="direccionPreparatoria" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="direccionProfesional" id="direccionProfesional" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="direccionComercialOtra" id="direccionComercialOtra" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div style="width: 15%;">
+                    <div text="center">
+                        De
+                    </div>
+                    <br>
+                    <div>
+                        <input name="dePrimaria" id="aPrimaria" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="deSecundaria" id="aSecundaria" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="dePreparatoria" id="aPreparatoria" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="deProfesional" id="aProfesional" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="deComercialOtra" id="aComercialOtra" type="date">
+                    </div>
+                    <br>
+                    <br>
+
+                </div>
+                <div style=" width: 15%;">
+                    <div text="center">
+                        A
+                    </div>
+                    <br>
+                    <div>
+                        <input name="aPrimaria" id="aPrimaria" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="aSecundaria" id="aSecundaria" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="aPreparatoria" id="aPreparatoria" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="aProfesional" id="aProfesional" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="aComercialOtra" id="aComercialOtra" type="date">
+                    </div>
+                    <br>
+                    <br>
+
+                </div>
+                <div style="width: 20%;">
+                    <div text="center">
+                        Titulo Recibido
+                    </div>
+                    <br>
+                    <div>
+                        <input name="titluloPrimaria" id="titluloPrimaria" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="tituloSecundaria" id="tituloSecundaria" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="tituloPreparatoria" id="tituloPreparatoria" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="tituloProfesional" id="tituloProfesional" class="fullwitdh" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <input name="tituloComercialOtra" id="tituloComercialOtra" class="fullwitdh" type="text">
+                    </div>
+                </div>
+
+            </div>
+            <div style="display: flex; flex-direction: row;">
+                <div style="width: 25%;">
+                    <div text="center">
+                        Estudios que esta efectuando en la actualidad:
+                    </div>
+                    <br>
+                    <div>
+                        Escuela <input name="estudioEscuela" id="estudioEscuela" class="fullwitdh" type="text">
+                    </div>
+                </div>
+                <div style="width: 25%;">
+                    <div text="center">
+                        <br>
+                    </div>
+                    <br>
+                    <div>
+                        Horario <input name="estudioHorario" id="estudioHorario" class="fullwitdh" type="text">
+                    </div>
+                </div>
+                <div style="width: 25%;">
+                    <div text="center">
+                        <br>
+                    </div>
+                    <br>
+                    <div>
+                        Curso o Carrera <input name="estudioCarrera" id="estudioCarrera" class="fullwitdh" type="text">
+                    </div>
+                </div>
+                <div style="width: 25%;">
+                    <div text="center">
+                        <br>
+                    </div>
+                    <br>
+                    <div>
+                        Grado <input name="estudioGrado" id="estudioGrado" class="fullwitdh" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <input name="enviar" id="enviar" type="submit" value="Enviar">
+        <input name="limpiar" id="limpiar" type="reset" value="Limpiar">
+
+    </form>
+
+</body>
+
+</html>

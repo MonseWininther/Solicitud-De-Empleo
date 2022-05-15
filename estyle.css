@@ -1,0 +1,54 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+    background-color: bisque;
+}
+
+.firstContiner {
+    display: flex;
+    border-radius: 1em;
+    border: dashed .2em black;
+    padding: 1em;
+    margin: 1em;
+    ;
+}
+
+#frameOne {
+    width: 55%;
+    background-color: #fffafa;
+}
+
+.titleContiner {
+    background-color: rgb(194, 194, 223);
+}
+
+.fullwitdh {
+    width: 90%;
+}
+
+.secondContiners {
+    border-radius: 1em;
+    border: dashed .2em black;
+    margin-top: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+.frametwo {
+    display: flex;
+    flex-direction: wrap;
+    margin-top: 1em;
+}
+
+h3 {
+    text-align: center;
+}
+
+.mediumWitdh {
+    width: 60%;
+}
+
+.frameThird {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
