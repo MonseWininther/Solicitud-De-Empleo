@@ -120,8 +120,197 @@ let dependeOtros
 //onload funcion que se ejecuta al cargar la ventana 
 window.onload = () => {
 
-    /**Para poder hacer las validaciones de los campos es necesario guardar y vincular las 
-    refencias a cada elementos del HTML que vamos a utilizar**/
+    /*Para poder hacer las validaciones de los campos es necesario guardar y vincular las 
+    refencias a cada elementos del HTML que vamos a utilizar (DOM)*/
+    vinculacionDeVariables()
+
+
+    //onsubmit es la Funcion que se ejecuta cuando un formulario es enviado
+    //VALIDACIONES
+    puesto.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(50, this.name, this.value)
+    }
+    apellidoPaterno.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    apellidoMaterno.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombres.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    domicilio.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(50, this.name, this.value)
+    }
+    colonia.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(50, this.name, this.value)
+    }
+    ciudadEstado.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    lugarNacimiento.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nacionalidad.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    enfermedadCronicaExplicacion.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(70, this.name, this.value)
+    }
+    deporte.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    clubSocialDeporte.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    pasatiempo.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    metaVida.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombrePadre.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombreMadre.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombreEsposao.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    domicilioPadre.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    domicilioMadre.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    domicilioEsposao.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    ocupacionPadre.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    ocupacionMadre.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    ocupacionEsposao.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombrePrimaria.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombreSecundaria.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombrePreparatoria.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombreProfesional.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    nombreComercialOtra.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    direccionPrimaria.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(60, this.name, this.value)
+    }
+    direccionSecundaria.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(60, this.name, this.value)
+    }
+    direccionPreparatoria.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    direccionProfesional.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    direccionComercialOtra.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    estudioEscuela.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    estudioCarrera.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(30, this.name, this.value)
+    }
+    telefono.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(10, this.name, this.value)
+    }
+    curp.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeLongitudErroneo(18, this.name, this.value)
+    }
+    rfc.onblur = function() {
+            console.log(this.name)
+            desplegarMensajeLongitudErroneo(13, this.name, this.value)
+        }
+        //--------------------------------------------------
+    estatura.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeDeRango(numero, 80, 250, estatura)
+    }
+
+    peso.onblur = function() {
+        console.log(this.name)
+        desplegarMensajeDeRango(numero, 30, 500, peso)
+    }
+
+
+    cvForm.onsubmit = () => {
+        let existeAlgunError = false
+
+
+        if (algunCampoAlfabeticoTieneError()) {
+            alert('Existen campos Alfabeticos Erroneos, corrijalos!')
+            existeAlgunError = true
+        }
+        if (algunCampoObligatorioEsVacio()) {
+            alert('Existen campos vacios, corrijalos!')
+            existeAlgunError = true
+        }
+        return existeAlgunError
+
+    }
+}
+
+
+//Variables
+const vinculacionDeVariables = () => {
 
     //Vinculacion de referencias
     //Alfabéticos
@@ -238,21 +427,6 @@ window.onload = () => {
     dependePadres = document.getElementById('dependePadres')
     dependeOtros = document.getElementById('dependeOtros')
 
-    //onsubmit es la Funcion que se ejecuta cuando un formulario es enviado
-    cvForm.onsubmit = () => {
-        let existeAlgunError = false
-
-        if (algunCampoAlfabeticoTieneError()) {
-            alert('Existen campos Alfabeticos Erroneos, corrijalos!')
-            existeAlgunError = true
-        }
-        if (algunCampoObligatorioEsVacio()) {
-            alert('Existen campos vacios, corrijalos!')
-            existeAlgunError = true
-        }
-        return existeAlgunError
-
-    }
 }
 
 const algunCampoObligatorioEsVacio = () => {
@@ -279,10 +453,10 @@ const algunCampoObligatorioEsVacio = () => {
 
 //Alfabetico
 const esAlfabetico = (cadena) => {
-    let expresionRegular = /[a-zA-Z ]/
-    return expresionRegular.test(cadena)
-}
-
+        let expresionRegular = /[a-zA-Z ]/
+        return expresionRegular.test(cadena)
+    }
+    //Referenincia Alfabeticos
 const algunCampoAlfabeticoTieneError = () => {
     let existenCamposConError = false
         //!true=false (Invertir)
@@ -316,6 +490,15 @@ const tieneUnaLongitudValida = (cadena, longitud) => {
     return esValidaLaLongitud
 }
 
+//Desplegar Mensaje de Longitud erroneo
+const desplegarMensajeLongitudErroneo = (longitudDeseada, nombreDelCampo, valorDelCampo) => {
+    let valor = valorDelCampo
+    let longitudActual = valor.length
+    let mensaje = 'La longitud del campo ' + nombreDelCampo.toUpperCase() + ' deberia ser: ' + longitudDeseada + ' Usted ingreso: ' + longitudActual + ' corrijalos!'
+    if (!tieneUnaLongitudValida(valor, longitudDeseada))
+        alert(mensaje)
+}
+
 //Límites en valores numéricos
 const elNumeroSeEncuentraEnELRango = (numeroAEvaluar, numeroMinimo, numeroMaximo) => {
     let numero = Number(numeroAEvaluar)
@@ -328,4 +511,11 @@ const elNumeroSeEncuentraEnELRango = (numeroAEvaluar, numeroMinimo, numeroMaximo
         return false
     }
     return true
+}
+
+const desplegarMensajeDeRango = (numeroAEvaluar, numeroMinimo, numeroMaximo, nombreDelCampo) => {
+    let mensaje = 'La' + nombreDelCampo + 'no esta esta el rango, corrijalos!'
+    if (!elNumeroSeEncuentraEnELRango(numeroAEvaluar, numeroMinimo, numeroMaximo)) {
+        alert(mensaje)
+    }
 }
