@@ -486,7 +486,7 @@ const algunCampoAlfabeticoTieneError = () => {
 //Longitud de cadena de caracteres
 const tieneUnaLongitudValida = (cadena, longitud) => {
     let esValidaLaLongitud = true
-    esValidaLaLongitud = cadena.length < longitud
+    esValidaLaLongitud = cadena.length <= longitud
     return esValidaLaLongitud
 }
 
